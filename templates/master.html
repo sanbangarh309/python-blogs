@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="/static/img/custom_logo.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Sandeep Bangarh">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>{{page}}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+	<!--
+	CSS
+	============================================= -->
+	<link rel="stylesheet" href="/static/css/linearicons.css">
+	<link rel="stylesheet" href="/static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/magnific-popup.css">
+	<link rel="stylesheet" href="/static/css/nice-select.css">
+	<link rel="stylesheet" href="/static/css/animate.min.css">
+	<link rel="stylesheet" href="/static/css/owl.carousel.css">
+	<link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+	<!-- Start Preloader Area -->
+	<div class="preloader-area">
+	  <div class="loader-box">
+	    <div class="loader"></div>
+	  </div>
+	</div>
+	<!-- End Preloader Area -->
+
+
+	<!-- Start Header Area -->
+	<header id="header">
+	  <div class="container main-menu">
+	    <div class="row align-items-center d-flex">
+	      <div id="logo">
+	        <a href="./"><img src="/static/img/logoo.png" alt="" title="" style="max-width: 21%;"/></a>
+	      </div>
+	      <nav id="nav-menu-container">
+	        <ul class="nav-menu">
+	          <li class=""><a {% if page == "Home" %} class="active" {% endif %} href="./">Home</a></li>
+	          <li><a {% if page == "About" %} class="active" {% endif %} href="./about">About</a></li>
+	          <li><a {% if page == "Portfolio" %} class="active" {% endif %} href="./portfolio">Portfolio</a></li>
+	          <li class="menu-has-children"><a href="#">Pages</a>
+	            <ul>
+	              <li><a href="elements.html">Elements</a></li>
+	              <li><a href="contact.html">Contact</a></li>
+	              <li><a href="services.html">Service</a></li>
+	              <li><a href="{% if page == "Portfolio Detail" %} class="active" {% endif %}">Portfolio Details</a></li>
+	            </ul>
+	          </li>
+	          <li class="menu-has-children"><a href="">Blog</a>
+	            <ul>
+	              <li><a href="blog-home.html">Blog Home</a></li>
+	              <li><a href="blog-single.html">Blog Single</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </nav>
+	    </div>
+	  </div>
+	</header>
+	<!-- End Header Area -->
+	{% block body %}{% endblock %}
+	<!-- End Contact Area -->
+</body>
+</html>
+<!-- start footer Area -->
+<footer class="footer-area">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="footer-top flex-column">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="/static/img/logo.png" alt="">
+						</a>
+						<h4>Follow Me</h4>
+					</div>
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer-bottom justify-content-center">
+			<p class="col-lg-8 col-sm-12 footer-text">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with Arya Natural Farming <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://aryanaturalfarming.com" target="_blank">Arya Natural Farming</a>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#">
+			<i class="lnr lnr-arrow-up"></i>
+		</a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="/static/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+	<script src="/static/js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="/static/js/easing.min.js"></script>
+	<script src="/static/js/hoverIntent.js"></script>
+	<script src="/static/js/superfish.min.js"></script>
+	<script src="/static/js/mn-accordion.js"></script>
+	<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+	<script src="/static/js/jquery.magnific-popup.min.js"></script>
+	<script src="/static/js/owl.carousel.min.js"></script>
+	<script src="/static/js/jquery.nice-select.min.js"></script>
+	<script src="/static/js/isotope.pkgd.min.js"></script>
+	<script src="/static/js/jquery.circlechart.js"></script>
+	<script src="/static/js/mail-script.js"></script>
+	<script src="/static/js/wow.min.js"></script>
+	<script src="/static/js/main.js"></script>
+</body>
+
+</html>
